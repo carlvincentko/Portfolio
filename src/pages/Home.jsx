@@ -1,5 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import introMe from "../assets/elements/body/intro_me.jpg";
+import ahead from "../assets/elements/body/ahead.png";
+import cyberSection from "../assets/elements/body/cybersec_section.png";
+import cyberCv from "../assets/files/Carl_Ko_Resume_Cybersecurity.pdf";
+import softengSection from "../assets/elements/body/softeng_section.jpg";
+import softengCv from "../assets/files/Carl_Ko_Resume_SoftwareEngineer.pdf";
+import cv from "../assets/files/Carl_Ko_Resume.pdf"
+import elc from "../assets/elements/body/elc.jpg";
+import lscs from "../assets/elements/body/lscs.jpg";
 
 export default function Home() {
   return (
@@ -7,7 +16,7 @@ export default function Home() {
       <main className="main-content">
         <div className="about-container">
           <div className="about-left">
-            <img src="/elements/body/intro_me.jpg" alt="Carl Ko" />
+            <img src={introMe} alt="Carl Ko" />
           </div>
           <div className="about-right">
             <h2>Welcome</h2>
@@ -24,38 +33,58 @@ export default function Home() {
         </div>
       </main>
 
-      <section className="works-section">
-        <div className="works-container">
-          <div className="works-header">
-            <h2>Work Experience</h2>
-          </div>
+      <section className="work-content">
+        <div className="work-header">
+          <h1>Work Experience</h1>
+        </div>
+
+        <div className="work-container">
+          <h2>IT and Web Maintenance</h2>
+          <h3>AHEAD Tutorial and Review</h3>
+
+          <img src={ahead} alt="AHEAD Tutorial and Review" />
+
+          <p>
+            Designed and implemented a CRM platform that centralized student inquiry
+            management, enrollment processing, payments, communications, and feedback
+            collection. Created end-to-end UI/UX designs in Figma and translated them
+            into a production-ready application. Developed secure role-based access
+            controls, automated communication workflows, webhook integrations, and
+            internal collaboration tools while contributing to database architecture
+            and security planning. Leveraged Next.js, TypeScript, Supabase, and
+            Drizzle ORM to build scalable staff-facing operations software.
+          </p>
         </div>
       </section>
 
-      <section className="works-section">
-        <div className="works-container">
-          <div className="works-header">
-            <h2>My Works</h2>
+      <section className="projects-section">
+        <div className="projects-container">
+          <div className="projects-header">
+            <h2>My Projects</h2>
           </div>
-          <div className="works-grid">
+          <div className="projects-grid">
 
-            <div className="work-item">
-              <Link to="/works/cybersec" className="work-card">
-                <img src="/elements/body/cybersec_section.png" alt="Cybersecurity Works" />
-                <div className="work-label">Cybersecurity</div>
+            <div className="project-item">
+              <Link to="/projects/cybersec" className="project-card">
+                <img src={cyberSection} alt="Cybersecurity Projects" />
+                <div className="project-label">Cybersecurity</div>
               </Link>
-              <a href="/files/Carl_Ko_Resume_Cybersecurity.pdf" target="_blank" download className="cv-link">Cybersecurity CV</a>
             </div>
 
-            <div className="work-item">
-              <Link to="/works/softeng" className="work-card">
-                <img src="/elements/body/softeng_section.jpg" alt="Software Engineering Works" />
-                <div className="work-label">Software Engineering</div>
+            <div className="project-item">
+              <Link to="/projects/softeng" className="project-card">
+                <img src={softengSection} alt="Software Engineering Projects" />
+                <div className="project-label">Software Engineering</div>
               </Link>
-              <a href="/files/Carl_Ko_Resume_SoftwareEngineer.pdf" target="_blank" download className="cv-link">Software Engineering CV</a>
             </div>
-
           </div>
+          
+          <div className="cv-container">
+            <a href={cv} target="_blank" download className="cv-link">
+              Download CV
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -67,12 +96,12 @@ export default function Home() {
 
           <div className="activities-grid">
             <Link to="/activities/elc" className="activity-card">
-              <img src="/elements/body/elc.jpg" alt="ENGLICOM" />
+              <img src={elc} alt="ENGLICOM" />
               <div className="activity-label">ENGLICOM</div>
             </Link>
 
             <Link to="/activities/lscs" className="activity-card">
-              <img src="/elements/body/lscs.jpg" alt="La Salle Computer Society" />
+              <img src={lscs} alt="La Salle Computer Society" />
               <div className="activity-label">La Salle Computer Society</div>
             </Link>
           </div>

@@ -1,4 +1,7 @@
 import React from 'react'
+import avp from "../assets/elements/lscs/avp.jpg";
+import encrypted from "../assets/elements/lscs/encrypted.png";
+import git from "../assets/elements/lscs/git.png";
 
 export default function ActivitiesLSCS() {
   return (
@@ -11,7 +14,7 @@ export default function ActivitiesLSCS() {
             <p>Training and Development</p>
           </div>
           <div className="org-image">
-            <img src="/elements/lscs/avp.jpg" alt="AVP for TND" />
+            <img src={avp} alt="AVP for TND" />
           </div>
         </div>
 
@@ -21,7 +24,7 @@ export default function ActivitiesLSCS() {
             <p>Encrypted: Mastering the Fight Against Data Breaches</p>
           </div>
           <div className="org-image">
-            <img src="/elements/lscs/encrypted.png" alt="Encrypted Event" />
+            <img src={encrypted} alt="Encrypted Event" />
           </div>
         </div>
 
@@ -31,7 +34,7 @@ export default function ActivitiesLSCS() {
             <p>GitHired: From Repos to Resumes</p>
           </div>
           <div className="org-image">
-            <img src="/elements/lscs/git.png" alt="GitHired Event" />
+            <img src={git} alt="GitHired Event" />
           </div>
         </div>
 

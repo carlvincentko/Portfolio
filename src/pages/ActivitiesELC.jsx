@@ -1,4 +1,7 @@
 import React from 'react'
+import avp from "../assets/elements/elc/avp.png";
+import cny from "../assets/elements/elc/cny.png";
+import mm from "../assets/elements/elc/mm.png";
 
 export default function ActivitiesELC() {
   return (
@@ -11,7 +14,7 @@ export default function ActivitiesELC() {
             <p>Finance</p>
           </div>
           <div className="org-image">
-            <img src="/elements/elc/avp.png" alt="AVP Finance" />
+            <img src={avp} alt="AVP Finance" />
           </div>
         </div>
 
@@ -21,7 +24,7 @@ export default function ActivitiesELC() {
             <p>Chinese New Year: Precious Scales of Fortune</p>
           </div>
           <div className="org-image">
-            <img src="/elements/elc/cny.png" alt="Operations and Logistics" />
+            <img src={cny} alt="Operations and Logistics" />
           </div>
         </div>
 
@@ -31,7 +34,7 @@ export default function ActivitiesELC() {
             <p>Medical Mission: Through Passion with Purpose</p>
           </div>
           <div className="org-image">
-            <img src="/elements/elc/mm.png" alt="Public Relations" />
+            <img src={mm} alt="Public Relations" />
           </div>
         </div>
 

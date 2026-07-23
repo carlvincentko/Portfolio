@@ -1,11 +1,15 @@
 import React from 'react'
+import resto from "../assets/elements/softeng/resto.png";
+import named from "../assets/elements/softeng/named.png";
+import payment from "../assets/elements/softeng/payment.png";
+import scheduler from "../assets/elements/softeng/scheduler.png";
 
-export default function WorksSofteng() {
+export default function ProjectsSofteng() {
   return (
     <main className="specialize-section">
       <div className="specialize-container">
 
-        <a className="specialize-item reverse" href="https://github.com/S4dallys/CCAPDEV-MCO-NgoLimKo" target="_blank" rel="noopener noreferrer">
+        <a className="specialize-item" href="https://github.com/carlvincentko/Restaurant_App" target="_blank" rel="noopener noreferrer">
           <div className="specialize-text">
             <h2>Frontend and Backend Website Development</h2>
             <p>
@@ -14,11 +18,11 @@ export default function WorksSofteng() {
             </p>
           </div>
           <div className="specialize-image">
-            <img src="/elements/softeng/resto.png" alt="Restaurant Web App" />
+            <img src={resto} alt="Restaurant Web App" />
           </div>
         </a>
 
-        <a className="specialize-item" href="https://github.com/briSalvador/Named-Networking-NIS3" target="_blank" rel="noopener noreferrer">
+        <a className="specialize-item reverse" href="https://github.com/carlvincentko/Named_Networking_Protocol" target="_blank" rel="noopener noreferrer">
           <div className="specialize-text">
             <h2>Development of a Named Network Protocol</h2>
             <p>
@@ -26,24 +30,11 @@ export default function WorksSofteng() {
             </p>
           </div>
           <div className="specialize-image">
-            <img src="/elements/softeng/named.png" alt="Named Network Protocol" />
+            <img src={named} alt="Named Network Protocol" />
           </div>
         </a>
 
-        <a className="specialize-item reverse" href="https://github.com/CarlKo-DLSU/CarlKo_ADPRG_MCO" target="_blank" rel="noopener noreferrer">
-          <div className="specialize-text">
-            <h2>Weekly Payroll Calculator</h2>
-            <p>
-              Developed a Go program that automatically computes weekly salaries.
-              Includes configurable parameters and handles special-case computations.
-            </p>
-          </div>
-          <div className="specialize-image">
-            <img src="/elements/softeng/payment.png" alt="Payroll Calculator" />
-          </div>
-        </a>
-
-        <a className="specialize-item" href="https://github.com/jstn-u/OPESY7.git" target="_blank" rel="noopener noreferrer">
+        <a className="specialize-item" href="https://github.com/carlvincentko/OS_Emulator_With_Scheduler" target="_blank" rel="noopener noreferrer">
           <div className="specialize-text">
             <h2>Multithreaded OS with Schedulers</h2>
             <p>
@@ -52,7 +43,7 @@ export default function WorksSofteng() {
             </p>
           </div>
           <div className="specialize-image">
-            <img src="/elements/softeng/scheduler.png" alt="OS Scheduler" />
+            <img src={scheduler} alt="OS Scheduler" />
           </div>
         </a>
 

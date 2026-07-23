@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import WorksCybersec from './pages/WorksCybersec'
-import WorksSofteng from './pages/WorksSofteng'
+import ProjectsCybersec from './pages/ProjectsCybersec'
+import ProjectsSofteng from './pages/ProjectsSofteng'
 import ActivitiesELC from './pages/ActivitiesELC'
 import ActivitiesLSCS from './pages/ActivitiesLSCS'
 
@@ -15,8 +15,8 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/works/cybersec" element={<WorksCybersec />} />
-          <Route path="/works/softeng" element={<WorksSofteng />} />
+          <Route path="/projects/cybersec" element={<ProjectsCybersec />} />
+          <Route path="/projects/softeng" element={<ProjectsSofteng />} />
           <Route path="/activities/elc" element={<ActivitiesELC />} />
           <Route path="/activities/lscs" element={<ActivitiesLSCS />} />
           <Route path="*" element={<Home />} />
