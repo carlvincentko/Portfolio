@@ -1,4 +1,5 @@
 import React from 'react'
+import distributed from "../assets/elements/softeng/distributed.png";
 import resto from "../assets/elements/softeng/resto.png";
 import named from "../assets/elements/softeng/named.png";
 import payment from "../assets/elements/softeng/payment.png";
@@ -9,12 +10,23 @@ export default function ProjectsSofteng() {
     <main className="specialize-section">
       <div className="specialize-container">
 
-        <a className="specialize-item" href="https://github.com/carlvincentko/Restaurant_App" target="_blank" rel="noopener noreferrer">
+        <a className="specialize-item" href="https://github.com/carlvincentko/Distributed_Log_Ecosystem" target="_blank" rel="noopener noreferrer">
+          <div className="specialize-text">
+            <h2>Development of a Distributed Log Ecosystem</h2>
+            <p>
+              Developed a scalable decentralized log analytics system with distributed syslog processing and fault tolerance.
+            </p>
+          </div>
+          <div className="specialize-image">
+            <img src={distributed} alt="Distributed Log Ecosystem" />
+          </div>
+        </a>
+
+        <a className="specialize-item reverse" href="https://github.com/carlvincentko/Restaurant_App" target="_blank" rel="noopener noreferrer">
           <div className="specialize-text">
             <h2>Frontend and Backend Website Development</h2>
             <p>
-              Created a restaurant review website using JavaScript, HTML, and CSS.
-              The system includes a dynamic database for users, restaurants, and reviews.
+              Created a restaurant review website using JavaScript, HTML, and CSS. The system includes a dynamic database for users, restaurants, and reviews.
             </p>
           </div>
           <div className="specialize-image">
@@ -22,7 +34,7 @@ export default function ProjectsSofteng() {
           </div>
         </a>
 
-        <a className="specialize-item reverse" href="https://github.com/carlvincentko/Named_Networking_Protocol" target="_blank" rel="noopener noreferrer">
+        <a className="specialize-item" href="https://github.com/carlvincentko/Named_Networking_Protocol" target="_blank" rel="noopener noreferrer">
           <div className="specialize-text">
             <h2>Development of a Named Network Protocol</h2>
             <p>
@@ -34,7 +46,7 @@ export default function ProjectsSofteng() {
           </div>
         </a>
 
-        <a className="specialize-item" href="https://github.com/carlvincentko/OS_Emulator_With_Scheduler" target="_blank" rel="noopener noreferrer">
+        <a className="specialize-item reverse" href="https://github.com/carlvincentko/OS_Emulator_With_Scheduler" target="_blank" rel="noopener noreferrer">
           <div className="specialize-text">
             <h2>Multithreaded OS with Schedulers</h2>
             <p>
