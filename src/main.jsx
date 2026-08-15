@@ -7,7 +7,7 @@ import '/global.css'
 const root = createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
